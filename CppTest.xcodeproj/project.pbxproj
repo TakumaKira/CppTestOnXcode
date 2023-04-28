@@ -8,7 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4F8072F829EAFFAF0059D966 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F8072F729EAFFAF0059D966 /* main.cpp */; };
+		4F80730B29EB04070059D966 /* Adder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F80730929EB04070059D966 /* Adder.cpp */; };
+		4FB32CCF29FAB228003A30D0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB32CCE29FAB228003A30D0 /* XCTest.framework */; };
+		4FB32CD229FAB4C4003A30D0 /* CppTestTarget.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F80731229EB06210059D966 /* CppTestTarget.mm */; };
+		4FB32CD429FAB4FF003A30D0 /* Adder.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F80730A29EB04070059D966 /* Adder.hpp */; };
+		4FB32CD529FAB503003A30D0 /* Adder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F80730929EB04070059D966 /* Adder.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FB32CD629FAB521003A30D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8072EC29EAFFAF0059D966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F8072F329EAFFAF0059D966;
+			remoteInfo = CppTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4F8072F229EAFFAF0059D966 /* CopyFiles */ = {
@@ -25,6 +40,11 @@
 /* Begin PBXFileReference section */
 		4F8072F429EAFFAF0059D966 /* CppTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8072F729EAFFAF0059D966 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4F80730929EB04070059D966 /* Adder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Adder.cpp; sourceTree = "<group>"; };
+		4F80730A29EB04070059D966 /* Adder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Adder.hpp; sourceTree = "<group>"; };
+		4F80731029EB06210059D966 /* CppTestTarget.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CppTestTarget.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F80731229EB06210059D966 /* CppTestTarget.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = CppTestTarget.mm; sourceTree = "<group>"; };
+		4FB32CCE29FAB228003A30D0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F80730D29EB06210059D966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB32CCF29FAB228003A30D0 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,7 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				4F8072F629EAFFAF0059D966 /* CppTest */,
+				4F80731129EB06210059D966 /* CppTestTarget */,
 				4F8072F529EAFFAF0059D966 /* Products */,
+				4FB32CCD29FAB228003A30D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				4F8072F429EAFFAF0059D966 /* CppTest */,
+				4F80731029EB06210059D966 /* CppTestTarget.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +89,26 @@
 			isa = PBXGroup;
 			children = (
 				4F8072F729EAFFAF0059D966 /* main.cpp */,
+				4F80730929EB04070059D966 /* Adder.cpp */,
+				4F80730A29EB04070059D966 /* Adder.hpp */,
 			);
 			path = CppTest;
+			sourceTree = "<group>";
+		};
+		4F80731129EB06210059D966 /* CppTestTarget */ = {
+			isa = PBXGroup;
+			children = (
+				4F80731229EB06210059D966 /* CppTestTarget.mm */,
+			);
+			path = CppTestTarget;
+			sourceTree = "<group>";
+		};
+		4FB32CCD29FAB228003A30D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FB32CCE29FAB228003A30D0 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +131,24 @@
 			productReference = 4F8072F429EAFFAF0059D966 /* CppTest */;
 			productType = "com.apple.product-type.tool";
 		};
+		4F80730F29EB06210059D966 /* CppTestTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F80731429EB06210059D966 /* Build configuration list for PBXNativeTarget "CppTestTarget" */;
+			buildPhases = (
+				4F80730C29EB06210059D966 /* Sources */,
+				4F80730D29EB06210059D966 /* Frameworks */,
+				4F80730E29EB06210059D966 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB32CD729FAB521003A30D0 /* PBXTargetDependency */,
+			);
+			name = CppTestTarget;
+			productName = CppTestTarget;
+			productReference = 4F80731029EB06210059D966 /* CppTestTarget.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +159,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					4F8072F329EAFFAF0059D966 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					4F80730F29EB06210059D966 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -110,20 +180,50 @@
 			projectRoot = "";
 			targets = (
 				4F8072F329EAFFAF0059D966 /* CppTest */,
+				4F80730F29EB06210059D966 /* CppTestTarget */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F80730E29EB06210059D966 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F8072F029EAFFAF0059D966 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F80730B29EB04070059D966 /* Adder.cpp in Sources */,
 				4F8072F829EAFFAF0059D966 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F80730C29EB06210059D966 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB32CD529FAB503003A30D0 /* Adder.cpp in Sources */,
+				4FB32CD429FAB4FF003A30D0 /* Adder.hpp in Sources */,
+				4FB32CD229FAB4C4003A30D0 /* CppTestTarget.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FB32CD729FAB521003A30D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F8072F329EAFFAF0059D966 /* CppTest */;
+			targetProxy = 4FB32CD629FAB521003A30D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4F8072F929EAFFAF0059D966 /* Debug */ = {
@@ -255,6 +355,44 @@
 			};
 			name = Release;
 		};
+		4F80731529EB06210059D966 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WN78Z578RB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirakiraworx.CppTestTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F80731629EB06210059D966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WN78Z578RB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kirakiraworx.CppTestTarget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +410,15 @@
 			buildConfigurations = (
 				4F8072FC29EAFFAF0059D966 /* Debug */,
 				4F8072FD29EAFFAF0059D966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F80731429EB06210059D966 /* Build configuration list for PBXNativeTarget "CppTestTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F80731529EB06210059D966 /* Debug */,
+				4F80731629EB06210059D966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
